@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- META TAGS -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="author" content="Cam3r0n">
+        <meta name="description" content="A simple password generator.">
+        <!-- STYLESHEETS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/stylesheet.css">
+        <!-- TITLE -->
+        <title>Password Generator</title>
+    </head>
+    <body>
+        <div id="wrapper">
+            <div class="container">
+                <h2>Password Generator</h2>
+                <div class="result-container">
+                    <div>
+                        <span id="result"></span>
+                    </div>
+                    <button class="btn" id="clipboard">
+                        <i class="fa fa-clipboard"></i>
+                    </button>
+                </div>
+                <div>
+                    <div class="group">
+                        <label>Password Length</label>
+                        <input type="number" id="length" min='4' max='32' value='22' />
+                    </div>
+                    <div class="group">
+                        <label>Include Uppercase Letters</label>
+                        <input type="checkbox" id="uppercase" checked />
+                    </div>
+                    <div class="group">
+                        <label>Include Lowercase Letters</label>
+                        <input type="checkbox" id="lowercase" checked />
+                    </div>
+                    <div class="group">
+                        <label>Include Numbers</label>
+                        <input type="checkbox" id="numbers" checked />
+                    </div>
+                    <div class="group">
+                        <label>Include Symbols</label>
+                        <input type="checkbox" id="symbols" checked />
+                    </div>
+                </div>
+                <button class="btn btn-large" id="generate">
+                    Generate Password
+                </button>
+            </div>
+        </div>
+        <script type="text/javascript" src="assets/js/generator.js"></script>
+    </body>
+</html>
